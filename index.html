@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PromptMasterブログ | プロンプトエンジニアリングとは？</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  .header {
+    background-color: #FFF;
+    color: #333;
+    padding: 5px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logo img {
+  max-height: 50px; /* Adjust this value to fit your design */
+  max-width: 100%; /* Ensures the image is not wider than its container */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+}
+  .navigation {
+    list-style: none;
+    padding: 0;
+  }
+  .navigation li {
+    font-weight: bold;
+    display: inline;
+    margin-right: 20px;
+  }
+  .navigation a {
+    text-decoration: none;
+    color: #333;
+  }
+  .main-content {
+    display: flex;
+    margin: 20px;
+  }
+  .article {
+    flex: 3;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .article img {
+  max-width: 100%; /* Make sure the image is never wider than its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevents any unwanted inline spacing */
+  margin: 0 auto 20px; /* Centers the image and adds space below */
+}
+  .sidebar {
+    flex: 1;
+    background-color: #fff; /* Changed from #e3e3e3 to match the article background */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added to match the article styling */
+  }
+  .sidebar h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F89090; /* Add red bottom border */
+    padding-bottom: 5px;
+  }
+  .sidebar-article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .sidebar-article img {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 50%; /* Circular images */
+  }
+  .sidebar-article h3 {
+    margin: 0;
+    font-size: 14px; /* Smaller font size for sidebar article titles */
+    color: #333;
+  }
+  .sidebar-article p {
+    font-size: 12px; /* Smaller font size for sidebar article descriptions */
+    color: #666;
+  }
+  .footer {
+    background-color: #FFF;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-logo"><img src="./img/logo_blog.png" alt=""></div>
+  <ul class="navigation">
+    <li><a href="#">ホーム</a></li>
+    <li><a href="#">記事</a></li>
+    <li><a href="#">サービス</a></li>
+  </ul>
+</header>
+
+<div class="main-content">
+  <article class="article">
+    <img src="./img/thumnails.png" alt="">
+    <h1>プロンプトエンジニアリングとは</h1>
+    <p>プロンプトエンジニアリングとは、AIを効率的に使用するために、プロンプトを開発・最適化するスキルのことです。<br><br>
+        AIが生成するコンテンツの質を上げるには、具体的かつ明確な指示を行う必要があります。指示の仕方が悪いと、望む結果を受け取れません。<br><br>
+        プロンプトエンジニアリングは、より品質の高い結果を得るための指示方法です。いわばAIとのコミュニケーション方法であり、プロンプトエンジニアリングを身につけることで、意図通りのコンテンツ生成が可能になります。<br><br>
+        
+        ここからは、プロンプトエンジニアリングを理解するうえで欠かせない2つの用語を紹介します。<br><br>
+        ・プロンプト<br>
+        ・プロンプトエンジニア<br><br>
+    
+    </p>
+    <h2>プロンプトとは</h2>
+    <p>
+        プロンプトとは、Generative AIに入力する指示文のことです。画像生成AIや文章生成AIに質問や命令を伝えるために使用されます。<br><br>
+
+        Generative AIとは、高品質なデータを生成できるAI技術のことです。コンテンツ生成AIとも呼ばれており、ユーザーの簡単な指示からアウトプットができる次世代のAI技術として注目されています。近年は画像や文章をはじめ、プログラムコードや構造化データなど、様々な領域で研究開発が進んでいます。<br><br>
+        
+        Generative AIを有効に活用するには、プロンプトの形式が極めて重要です。しかし、最適なプロンプト形式は、タスクによって異なっています。最良の結果を得るには、さまざまな形式を試してみることが大切です。<br><br>
+    
+    </p>
+    <h2>プロンプトエンジニアとは</h2>
+    <p>
+        プロンプトエンジニアとは、プロンプトの設計・開発を行う職業を指す言葉です。プロンプトエンジニアの主な仕事内容は、次の3つです。<br><br>
+
+        ・プロンプトの設計<br>
+        ・AIモデルの分析<br>
+        ・プロンプトの最適化<br><br>
+        プロンプトエンジニアは、ユーザーの満足度を向上させるために、ユーザーニーズにあわせてプロンプトを設計する必要があります。また、AIモデルを様々な角度から客観的に分析して、プロンプトの機能を向上、改善する作業も必要です。AIモデルの分析を基にプロンプトを改良、調整して、質の高いコンテンツを生成する能力を向上させます。<br><br>
+        
+        AI技術の進歩により、プロンプトエンジニアの今後の需要は一層高まるでしょう。<br><br>
+    </p>
+    <h2>プロンプトエンジニアリングを身につけるメリット</h2>
+    <p>プロンプトエンジニアリングを身につける主なメリットは次の2つです。<br><br>
+
+        ・AIが生成するコンテンツの精度向上<br>
+        ・作業の効率化とコストダウン<br><br>
+        プロンプトエンジニアリングを身につければ、AIに適切かつ的確な指示を出せるため、精度の高いコンテンツが生成できます。<br><br>
+        
+        現在の対話型AIにおいて質問の仕方を間違えると、望んでいる回答が得られません。何度やっても満足しない回答を得ていると、自分で作業したほうが速いと感じて作業を中断したくなりますが、プロンプトエンジニアリングを身につければ、より望んだ答えに近づけられます。<br><br>
+        
+        また、AIが生成するコンテンツの精度を上げることで、作業の効率化を実現できます。その結果、これまで人間が行っていた業務を自動化できるようになり、コスト削減も可能です。<br><br>
+        
+        作業の効率化とコストダウンによって、企業の収益性や資本効率が上がるため、より多くのイノベーションや競争力向上に投資できるようになるでしょう。<br><br>
+        
+        </p>
+    <h2>プロンプトエンジニアリングの学習方法</h2>
+    <p>
+        ここからは、プロンプトエンジニアリングの主な学習方法を2つ紹介します。  <br><br>
+
+        ・本/書籍<br>
+        ・WEBサービス<br><br>
+        それぞれメリット・デメリットがあり、タイプによって選ぶべき学習方法は異なります。メリットとデメリットの双方を把握したうえで、自分に適した学習方法を選びましょう。<br><br>
+    
+    
+        <h3>本・書籍でプロンプトエンジニアリングを学習する最大のメリット</h3>
+        
+        本・書籍でプロンプトエンジニアリングを学習する最大のメリットは、コストパフォーマンスです。1冊あたり数千円で購入できるため、すぐに学習を始められます。いつでも好きなタイミングで読み始めることができ、マイペースに勉強を進められるため、独学したい人に最適です。<br><br>
+
+        しかし、本を読み進めていくだけでは、わからないことがあった場合に質問ができません。また、本の難易度が高いと、途中で挫折してしまいがちです。初心者は難易度の低いものを選んで、着実にステップアップしていく必要があります。<br><br>
+        
+        初心者におすすめの本・書籍は、「GPT4対応 ChatGPTの応答精度はプロンプトが9割」です。
+        プロンプトの基礎知識からGPT-4の最新情報にいたるまで、ChatGPTに焦点を当てながら、初心者向けにわかりやすく解説しています。<br><br>
+
+        テンプレートを付けてChatGPTの具体的な使用方法を紹介しており、ChatGPTの実践的な入門書だと言えるでしょう。電子書籍で購入できるため、スマホやタブレットで学習したい人に最適です。<br><br>
+
+
+        <h3>WEBサービスでプロンプトエンジニアリングを学習するメリット</h3>
+
+WEBサービスでプロンプトエンジニアリングを学習するメリットは、いつでも好きな場所で勉強できる点です。インターネット環境があれば、カフェなど自宅以外の場所でも受講できます。スマホで学習できるため、忙しくてまとまった勉強時間を取れない人も、通勤・通学のスキマ時間に学習可能です。<br><br>
+
+また、テキストプロンプトや画像プロンプト、動画プロンプトなど様々な生成AIのサービスに対応して。未経験から学習する人には、適した学習方法だといえるでしょう。<br><br>
+
+その一方で、本を買って学習するより費用が高いデメリットがあります。リーズナブルな講座もありますが、十分なサポートを得られない可能性があるので注意が必要です。
+
+<b style="color: red;">おすすめのWEBサービスは、LINEチャットの「Twins Link」とWEBサービスの「Prompt Master」です。「生成AIをもっと身近に。」をビジョンとしてサービス運用をしているので、どんな人でもプロンプトエンジニアリング力がつけれるような学習内容になっています。</b><br><br>
+
+低価格のサブスクリプションモデルになっているので、いつでも好きなタイミングで視聴できます。学習にかかるコストを抑えたい人に最適です。<br><br>
+    
+・Twins Linkは<a target="_blank" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=478khwxt">こちら</a>から<br>
+・Prompt Masterは<a target="_blank" href="https://shoma0321.github.io/prompt/">こちら</a>から<br>
+    </p>
+
+    <h2>まとめ</h2>
+    <p>今回は、プロンプトエンジニアリングの意味や学ぶ利点、学習方法を紹介しました。参考書だけでも学習できますが、未経験の人は途中で挫折するリスクがあります。無理なく学習を進めていきたいなら、WEBサービスがおすすめです。
+        プロンプトエンジニアリングは、どんな人でも身につけることができます。プロンプトエンジニアリングを身につけることで、日々の業務を効率的に行うことができます。
+        プログラミング未経験の人が学習を始めるなら、LINEサービス「<a target="_blank" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=478khwxt">TwinsLink</a>」またはWEBサービスの「<a target="_blank" href="https://shoma0321.github.io/prompt/">Prompt Master</a>」がおすすめです。
+        Prompt Masterでは、テキストプロンプトや画像プロンプト、動画プロンプトなど様々な生成AIのサービスに対応しています。挫折せず最短でスキルを習得したい人は、Prompt Masterの利用を検討してみてください。
+        </p>
+  </article>
+  <aside class="sidebar">
+    <h2>人気記事</h2>
+    <div class="sidebar-article">
+      <img src="./img/thumnails.png" alt="Thumbnail">
+      <div>
+        <h3>プロンプトエンジニアリング基礎</h3>
+        <p>プロンプトエンジニアリングとは？意味や学ぶ利点、学習方法も紹介</p>
+      </div>
+    </div>
+    <div class="sidebar-article">
+        <img src="./img/thumnails.png" alt="Thumbnail">
+        <div>
+          <h3>chatGPTは何ができるの？</h3>
+          <p>chatGPTとは何かや活用事例などを紹介！</p>
+        </div>
+      </div>
+      <div class="sidebar-article">
+        <img src="./img/thumnails.png"alt="Thumbnail">
+        <div>
+          <h3>生成AIの正しい質問の仕方って？</h3>
+          <p>生成AIを使う上でより良い出力を出すための方法を伝授します！</p>
+        </div>
+      </div>
+      <div class="sidebar-article">
+        <img src="./img/thumnails.png" alt="Thumbnail">
+        <div>
+          <h3>DALL・Eて何？？</h3>
+          <p>DALL・Eとは何か？やその使い方を説明します！</p>
+        </div>
+      </div>
+      <div class="sidebar-article">
+        <img src="./img/thumnails.png" alt="Thumbnail">
+        <div>
+          <h3>普段の仕事でどう使う？生成AIの活用方法5選</h3>
+          <p>ビジネスマンの業務において使える生成AIの使い方を教えます！</p>
+        </div>
+      </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  &copy; 2023 PromptMasterブログ. All rights reserved.
+</footer>
+
+</body>
+</html>
