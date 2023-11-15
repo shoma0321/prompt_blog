@@ -1,6 +1,21 @@
 
 @charset "utf-8";
-
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Adjust the maximum width of the header and footer to ensure they are not cut off */
+  .header, .footer {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -94,7 +109,9 @@ body {
     width: 100%;
   }
 
+
   @media (max-width: 768px) {
+    /* Align the main content and sidebar for smaller screens */
     .main-content {
       flex-direction: column; 
     }
@@ -104,7 +121,35 @@ body {
       flex: none;
       width: 100%;
     }
+    /* Remove fixed positioning from header and footer on smaller screens */
     .header, .footer {
       position: static; 
     }
-  }
+    /* Adjust the size of the header logo for smaller screens */
+    .header-logo img {
+      max-height: 35px; /* Adjust this value as needed */
+    }
+    /* Adjust the overall padding of the header to center content */
+    .header {
+      padding: 5px 10px; /* Adjust the horizontal padding */
+    }
+    /* Adjust the margin for navigation items */
+    .navigation li {
+      margin-right: 10px; /* Less space between navigation items */
+    }
+}
+
+@media (max-width: 600px) {
+    /* Adjust the size of the header logo for even smaller screens */
+    .header-logo img {
+      max-height: 30px; /* Further reduce the size of the logo if needed */
+    }
+    /* Adjust the padding of the header to maintain alignment */
+    .header {
+      padding: 5px; /* Reduce the padding to align contents in the center */
+    }
+    /* Adjust the navigation text size if necessary */
+    .navigation li a {
+      font-size: 0.8em; /* Reduce the font size of navigation links */
+    }
+}
